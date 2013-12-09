@@ -1,1 +1,1 @@
-web: MIX_ENV=prod ./start.sh
+web: yes | MIX_ENV=prod ./start.sh
