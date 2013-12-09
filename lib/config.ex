@@ -1,17 +1,16 @@
-defmodule Config do 
-
+defmodule Config do
   def config do
-    [webserver: 
-      [http_host: "localhost", 
-       http_port: 8080,
+    [webserver:
+      [http_host: "localhost",
+       http_port: list_to_integer(:os.getenv("PORT")),
        acceptors: 100,
        ssl: false,
        cacertfile_path: "",
        certfile_path: "",
        keyfile_path: ""
       ],
-    ws: 
-      [ws_port: 8080,
+    ws:
+      [ws_port: list_to_integer(:os.getenv("PORT")),
        ws_mod: :Handler
       ],
     use_internationalization: false,
@@ -25,5 +24,4 @@ defmodule Config do
       ]
     ]
   end
-
 end
