@@ -11,7 +11,10 @@ defmodule Cityguide.Guide do
   end
 
   defp fetch_temperature(woeid) do
-    CurrentWeather.YahooFetcher.fetch(woeid)
+    {_, seconds, _} = :erlang.now
+    SimpleCache.fetch woeid, seconds, fn ->
+      CurrentWeather.YahooFetcher.fetch(woeid)
+    end
   end
 
   defp city(cityname) when is_binary(cityname) do

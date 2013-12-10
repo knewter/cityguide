@@ -2,6 +2,7 @@
   "cowlib": {:git, "git://github.com/extend/cowlib.git", "63298e8e160031a70efff86a1acde7e7db1fcda6", [{:ref, "0.4.0"}]},
   "current_weather": {:git, "git://github.com/knewter/current_weather.git", "2074218de6fa6c1371db54e49036350e7244f923", []},
   "ecto": {:git, "git://github.com/elixir-lang/ecto.git", "f72701b9b08f9d85d3e4a68c1d11bf9be028702f", []},
+  "exactor": {:git, "git://github.com/sasa1977/exactor.git", "573baa559d074375900e686fc921c86fb60b1ff1", []},
   "exjson": {:git, "git://github.com/guedes/exjson.git", "0650689012055de7af3f9799af35ac5c6dd95138", []},
   "hackney": {:git, "git://github.com/benoitc/hackney.git", "6cb183bf437ba6e4c947a8eb99fde79ffec38d27", []},
   "mimetypes": {:git, "https://github.com/spawngrid/mimetypes.git", "47d37a977a7d633199822bf6b08353007483d00f", [{:ref, "master"}]},

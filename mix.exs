@@ -22,6 +22,7 @@ defmodule Cityguide.Mixfile do
   defp deps(:prod) do
     [
       { :weber, github: "0xAX/weber" },
+      { :exactor, github: "sasa1977/exactor" },
       { :current_weather, github: "knewter/current_weather" }
     ]
   end
